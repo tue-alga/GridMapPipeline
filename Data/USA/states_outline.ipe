@@ -1,0 +1,764 @@
+<?xml version="1.0"?>
+<!DOCTYPE ipe SYSTEM "ipe.dtd">
+<ipe version="70218" creator="Ipe 7.2.24">
+<info created="D:20100318161905" modified="D:20251105101958"/>
+<ipestyle name="basic">
+<symbol name="arrow/arc(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/farc(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="mark/circle(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+</symbol>
+<symbol name="mark/disk(sx)" transformations="translations">
+<path fill="sym-stroke">
+0.6 0 0 0.6 0 0 e
+</path>
+</symbol>
+<symbol name="mark/fdisk(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+0.6 0 0 0.6 0 0 e
+0.4 0 0 0.4 0 0 e
+</path>
+<path fill="sym-fill">
+0.4 0 0 0.4 0 0 e
+</path>
+</group>
+</symbol>
+<symbol name="mark/box(sx)" transformations="translations">
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</symbol>
+<symbol name="mark/square(sx)" transformations="translations">
+<path fill="sym-stroke">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+</path>
+</symbol>
+<symbol name="mark/fsquare(sfx)" transformations="translations">
+<group>
+<path fill="sym-stroke" fillrule="eofill">
+-0.6 -0.6 m
+0.6 -0.6 l
+0.6 0.6 l
+-0.6 0.6 l
+h
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+<path fill="sym-fill">
+-0.4 -0.4 m
+0.4 -0.4 l
+0.4 0.4 l
+-0.4 0.4 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="mark/cross(sx)" transformations="translations">
+<group>
+<path fill="sym-stroke">
+-0.43 -0.57 m
+0.57 0.43 l
+0.43 0.57 l
+-0.57 -0.43 l
+h
+</path>
+<path fill="sym-stroke">
+-0.43 0.57 m
+0.57 -0.43 l
+0.43 -0.57 l
+-0.57 0.43 l
+h
+</path>
+</group>
+</symbol>
+<symbol name="arrow/fnormal(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/pointed(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/fpointed(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-0.8 0 l
+-1 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/linear(spx)">
+<path stroke="sym-stroke" pen="sym-pen">
+-1 0.333 m
+0 0 l
+-1 -0.333 l
+</path>
+</symbol>
+<symbol name="arrow/fdouble(spx)">
+<path stroke="sym-stroke" fill="white" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<symbol name="arrow/double(spx)">
+<path stroke="sym-stroke" fill="sym-stroke" pen="sym-pen">
+0 0 m
+-1 0.333 l
+-1 -0.333 l
+h
+-1 0 m
+-2 0.333 l
+-2 -0.333 l
+h
+</path>
+</symbol>
+<anglesize name="22.5 deg" value="22.5"/>
+<anglesize name="30 deg" value="30"/>
+<anglesize name="45 deg" value="45"/>
+<anglesize name="60 deg" value="60"/>
+<anglesize name="90 deg" value="90"/>
+<arrowsize name="large" value="10"/>
+<arrowsize name="small" value="5"/>
+<arrowsize name="tiny" value="3"/>
+<color name="cyan" value="0.553 0.827 0.78"/>
+<color name="gray" value="0.851"/>
+<color name="green" value="0.702 0.871 0.412"/>
+<color name="lightgreen" value="0.8 0.922 0.773"/>
+<color name="lightpurple" value="0.745 0.729 0.855"/>
+<color name="lightyellow" value="1 1 0.702"/>
+<color name="orange" value="0.992 0.706 0.384"/>
+<color name="pink" value="0.988 0.804 0.898"/>
+<color name="purple" value="0.737 0.502 0.741"/>
+<color name="red" value="0.984 0.502 0.447"/>
+<color name="seablue" value="0.502 0.694 0.827"/>
+<color name="yellow" value="1 0.929 0.435"/>
+<dashstyle name="dash dot dotted" value="[4 2 1 2 1 2] 0"/>
+<dashstyle name="dash dotted" value="[4 2 1 2] 0"/>
+<dashstyle name="dashed" value="[4] 0"/>
+<dashstyle name="dotted" value="[1 3] 0"/>
+<gridsize name="10 pts (~3.5 mm)" value="10"/>
+<gridsize name="14 pts (~5 mm)" value="14"/>
+<gridsize name="16 pts (~6 mm)" value="16"/>
+<gridsize name="20 pts (~7 mm)" value="20"/>
+<gridsize name="28 pts (~10 mm)" value="28"/>
+<gridsize name="32 pts (~12 mm)" value="32"/>
+<gridsize name="4 pts" value="4"/>
+<gridsize name="56 pts (~20 mm)" value="56"/>
+<gridsize name="8 pts (~3 mm)" value="8"/>
+<pen name="fat" value="1.2"/>
+<pen name="heavier" value="0.8"/>
+<pen name="ultrafat" value="2"/>
+<symbolsize name="large" value="5"/>
+<symbolsize name="small" value="2"/>
+<symbolsize name="tiny" value="1.1"/>
+<textsize name="Huge" value="\Huge"/>
+<textsize name="LARGE" value="\LARGE"/>
+<textsize name="Large" value="\Large"/>
+<textsize name="footnote" value="\footnotesize"/>
+<textsize name="huge" value="\huge"/>
+<textsize name="large" value="\large"/>
+<textsize name="small" value="\small"/>
+<textsize name="tiny" value="\tiny"/>
+<textstyle name="center" begin="\begin{center}" end="\end{center}"/>
+<textstyle name="item" begin="\begin{itemize}\item{}" end="\end{itemize}"/>
+<textstyle name="itemize" begin="\begin{itemize}" end="\end{itemize}"/>
+<tiling name="falling" angle="-60" step="4" width="1"/>
+<tiling name="rising" angle="30" step="4" width="1"/>
+</ipestyle>
+<page>
+<layer name="outline"/>
+<layer name="sites"/>
+<view layers="outline sites" active="sites"/>
+<text layer="sites" matrix="1 0 0 1 -128.249 194.523" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.604" height="6.808" depth="0" halign="center" valign="center">WA</text>
+<text matrix="1 0 0 1 -145.37 155.8" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.082" height="6.808" depth="0" halign="center" valign="center">OR</text>
+<text matrix="1 0 0 1 -44.2529 171.94" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.328" height="6.808" depth="0" halign="center" valign="center">MT</text>
+<text matrix="1 0 0 1 -86.6184 138.783" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="11.208" height="6.808" depth="0" halign="center" valign="center">ID</text>
+<text matrix="1 0 0 1 -34.2392 124.568" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="17.711" height="6.808" depth="0" halign="center" valign="center">WY</text>
+<text matrix="1 0 0 1 -123.137 98.4131" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.944" height="6.808" depth="0" halign="center" valign="center">NV</text>
+<text matrix="1 0 0 1 -155.384 64.2406" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">CA</text>
+<text matrix="1 0 0 1 -76.8148 86.0886" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">UT</text>
+<text matrix="1 0 0 1 -22.4049 75.8648" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.944" height="6.808" depth="0" halign="center" valign="center">CO</text>
+<text matrix="1 0 0 1 -33.3289 23.5207" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.604" height="6.808" depth="0" halign="center" valign="center">NM</text>
+<text matrix="1 0 0 1 -88.0539 30.1032" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.56" height="6.808" depth="0" halign="center" valign="center">AZ</text>
+<text matrix="1 0 0 1 44.0494 64.9409" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.284" height="6.808" depth="0" halign="center" valign="center">KS</text>
+<text matrix="1 0 0 1 31.7599 100.444" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.252" height="6.808" depth="0" halign="center" valign="center">NE</text>
+<text matrix="1 0 0 1 30.3944 135.036" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.145" height="6.808" depth="0" halign="center" valign="center">SD</text>
+<text matrix="1 0 0 1 29.4841 171.45" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.082" height="6.808" depth="0" halign="center" valign="center">ND</text>
+<text matrix="1 0 0 1 78.1868 154.608" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.604" height="6.808" depth="0" halign="center" valign="center">MN</text>
+<text matrix="1 0 0 1 89.566 107.272" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="11.07" height="6.808" depth="0" halign="center" valign="center">IA</text>
+<text matrix="1 0 0 1 97.7588 61.7547" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.881" height="6.808" depth="0" halign="center" valign="center">MO</text>
+<text matrix="1 0 0 1 51.332 28.0724" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.497" height="6.808" depth="0" halign="center" valign="center">OK</text>
+<text matrix="1 0 0 1 13.5527 -7.66201" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">TX</text>
+<text matrix="1 0 0 1 165.124 125.478" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="12.73" height="6.808" depth="0" halign="center" valign="center">MI</text>
+<text matrix="1 0 0 1 155.11 84.513" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="11.07" height="6.808" depth="0" halign="center" valign="center">IN</text>
+<text matrix="1 0 0 1 132.115 94.8843" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="9.824" height="6.808" depth="0" halign="center" valign="center">IL</text>
+<text matrix="1 0 0 1 111.71 138.084" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.837" height="6.808" depth="0" halign="center" valign="center">WI</text>
+<text matrix="1 0 0 1 230.423 105.241" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.422" height="6.808" depth="0" halign="center" valign="center">PA</text>
+<text matrix="1 0 0 1 184.241 91.3405" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.221" height="6.808" depth="0" halign="center" valign="center">OH</text>
+<text matrix="1 0 0 1 166.489 55.8375" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.221" height="6.808" depth="0" halign="center" valign="center">KY</text>
+<text matrix="1 0 0 1 160.95 -11.6819" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.699" height="6.808" depth="0" halign="center" valign="center">AL</text>
+<text matrix="1 0 0 1 130.961 -8.78771" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">MS</text>
+<text matrix="1 0 0 1 99.5798 19.4242" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.806" height="6.808" depth="0" halign="center" valign="center">AR</text>
+<text matrix="1 0 0 1 91.4717 -8.07413" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.699" height="6.808" depth="0" halign="center" valign="center">LA</text>
+<text matrix="1 0 0 1 215.192 -51.1265" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="12.73" height="6.808" depth="0" halign="center" valign="center">FL</text>
+<text matrix="1 0 0 1 189.247 1.21763" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.29" height="6.808" depth="0" halign="center" valign="center">GA</text>
+<text matrix="1 0 0 1 223.004 10.1685" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="12.73" height="6.808" depth="0" halign="center" valign="center">SC</text>
+<text matrix="1 0 0 1 230.212 41.7274" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">NC</text>
+<text matrix="1 0 0 1 229.302 67.2167" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="13.837" height="6.808" depth="0" halign="center" valign="center">VA</text>
+<text matrix="1 0 0 1 207.454 75.8648" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="17.711" height="6.808" depth="0" halign="center" valign="center">WV</text>
+<text matrix="1 0 0 1 246.703 132.831" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.944" height="6.808" depth="0" halign="center" valign="center">NY</text>
+<text matrix="1 0 0 1 289.034 172.431" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="15.913" height="6.808" depth="0" halign="center" valign="center">ME</text>
+<text matrix="1 0 0 1 272.563 163.132" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.944" height="6.808" depth="0" halign="center" valign="center">NH</text>
+<text matrix="1 0 0 1 259.766 157.421" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">VT</text>
+<text matrix="1 0 0 1 268.847 119.417" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.39" height="6.808" depth="0" halign="center" valign="center">CT</text>
+<text matrix="1 0 0 1 271.097 134.657" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.604" height="6.808" depth="0" halign="center" valign="center">MA</text>
+<text matrix="1 0 0 1 281.48 122.982" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="10.931" height="6.808" depth="0" halign="center" valign="center">RI</text>
+<text matrix="1 0 0 1 259.903 100.514" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="12.592" height="6.808" depth="0" halign="center" valign="center">NJ</text>
+<text matrix="1 0 0 1 255.036 84.408" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.391" height="6.808" depth="0" halign="center" valign="center">DE</text>
+<text matrix="1 0 0 1 232.361 88.695" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="16.743" height="6.808" depth="0" halign="center" valign="center">MD</text>
+<text matrix="1 0 0 1 154.199 29.613" transformations="translations" pos="232.397 356.522" stroke="black" type="label" width="14.667" height="6.808" depth="0" halign="center" valign="center">TN</text>
+<path layer="outline" stroke="black" cap="1" join="1">
+90.8284 574.466 m
+90.414 573.015 l
+93.5217 570.944 l
+91.6571 570.115 l
+90.8284 569.079 l
+91.6571 566.386 l
+91.4499 563.071 l
+90.414 560.999 l
+88.7566 561.621 l
+85.8562 558.306 l
+84.4059 558.306 l
+85.4418 560.792 l
+88.3423 563.278 l
+88.3423 565.35 l
+85.4418 565.971 l
+81.2983 568.043 l
+75.7045 571.772 l
+73.0112 569.908 l
+73.4256 567.629 l
+73.6328 562.864 l
+73.6328 559.134 l
+74.4615 556.441 l
+73.84 554.577 l
+73.2184 552.505 l
+73.2184 550.019 l
+74.9092 546.216 l
+72.678 544.941 l
+71.5625 543.825 l
+70.6063 540 l
+69.3313 536.654 l
+67.7377 533.466 l
+66.6221 530.438 l
+65.5065 527.888 l
+64.391 525.339 l
+62.9567 521.992 l
+61.422 518.594 l
+60.6252 515.407 l
+58.0753 513.494 l
+56.3223 509.67 l
+55.6848 506.323 l
+55.3661 502.658 l
+55.3594 499.282 l
+54.309 490.529 l
+48.7069 481.076 l
+50.4576 471.972 l
+49.4072 463.219 l
+51.8581 454.816 l
+52.2082 450.965 l
+55.3594 448.864 l
+57.4601 449.914 l
+60.2612 448.514 l
+57.8103 448.514 l
+57.8103 442.912 l
+55.3594 445.013 l
+54.6591 437.31 l
+58.1604 433.458 l
+55.7095 428.557 l
+63.0622 411.4 l
+62.3619 404.398 l
+71.4652 399.146 l
+75.6668 394.594 l
+79.8683 393.544 l
+80.9187 389.342 l
+84.0698 388.292 l
+89.6719 377.788 l
+88.9716 372.186 l
+111.029 369.385 l
+146.73 345.66 l
+165.637 343.209 l
+173.604 342.363 l
+174.432 347.542 l
+190.178 345.885 l
+193.047 343.375 l
+194.367 341.301 l
+195.405 340.64 l
+205.589 329.89 l
+206.778 325.468 l
+207.415 320.847 l
+209.168 317.181 l
+217.137 309.532 l
+220.165 308.416 l
+221.918 308.575 l
+225.902 315.428 l
+227.655 317.181 l
+229.408 317.819 l
+239.926 317.022 l
+245.345 311.285 l
+247.098 308.735 l
+249.01 304.591 l
+250.285 300.607 l
+251.4 298.695 l
+253.313 296.304 l
+254.747 293.276 l
+257.297 290.886 l
+258.731 289.133 l
+259.847 283.714 l
+261.59 278.85 l
+263.476 276.427 l
+267.785 272.656 l
+274.518 270.501 l
+279.097 269.963 l
+284.753 268.347 l
+283.137 274.272 l
+282.059 279.12 l
+283.137 282.082 l
+281.79 283.968 l
+284.181 285.725 l
+283.891 290.077 l
+286.067 290.803 l
+288.896 295.881 l
+292.161 297.839 l
+293.249 300.015 l
+296.44 301.031 l
+295.86 299.58 l
+296.731 298.202 l
+305.508 302.917 l
+306.523 304.44 l
+307.611 307.777 l
+307.73 310.051 l
+308.046 311.911 l
+308.917 313.072 l
+310.803 311.911 l
+312.181 311.404 l
+313.632 311.984 l
+315.518 313 l
+317.984 313.362 l
+323.48 313.812 l
+326.309 314 l
+331.59 312.68 l
+334.702 312.208 l
+336.494 312.774 l
+337.437 314.755 l
+339.7 314.66 l
+341.397 313.717 l
+344.604 311.926 l
+346.395 309.851 l
+347.244 308.814 l
+349.319 308.531 l
+350.827 307.965 l
+353.845 308.248 l
+357.617 308.531 l
+359.314 311.171 l
+360.163 311.454 l
+362.426 310.134 l
+364.029 308.908 l
+366.104 307.211 l
+367.33 307.116 l
+368.367 308.531 l
+367.707 309.662 l
+366.481 310.605 l
+364.784 311.454 l
+362.709 313.34 l
+362.521 314.755 l
+363.841 315.698 l
+365.255 316.829 l
+365.727 318.432 l
+365.727 319.658 l
+364.124 320.035 l
+363.369 319.092 l
+362.143 318.244 l
+361.106 318.244 l
+359.22 320.13 l
+357.806 319.281 l
+355.542 319.092 l
+354.222 319.752 l
+354.411 321.45 l
+356.014 322.581 l
+358.937 322.676 l
+361.955 321.733 l
+366.019 322.42 l
+368.226 323.523 l
+371.477 323.481 l
+374.723 323.769 l
+377.016 323.529 l
+378.632 328.915 l
+380.787 322.182 l
+385.096 323.259 l
+385.365 325.683 l
+387.975 325.992 l
+389.106 325.426 l
+394.67 326.369 l
+397.405 324.577 l
+400.517 323.257 l
+404.006 322.22 l
+405.326 321.465 l
+406.835 318.825 l
+412.87 320.711 l
+414.85 321.371 l
+417.774 324.2 l
+419.565 324.294 l
+422.394 323.728 l
+425.506 321.371 l
+426.638 319.391 l
+429.844 316.373 l
+431.73 315.43 l
+433.804 314.204 l
+434.653 308.923 l
+435.785 303.831 l
+435.973 299.965 l
+438.237 299.776 l
+438.331 297.796 l
+438.519 294.495 l
+440.123 292.421 l
+442.857 289.592 l
+444.555 288.743 l
+446.063 287.14 l
+447.101 284.5 l
+450.118 279.596 l
+451.061 278.465 l
+453.607 277.71 l
+454.833 276.484 l
+456.436 274.127 l
+456.908 271.958 l
+457.474 270.543 l
+459.171 270.449 l
+461.529 271.203 l
+463.886 272.429 l
+467.375 273.089 l
+466.715 274.975 l
+466.526 276.956 l
+467.281 281.105 l
+466.776 286.949 l
+466.338 290.629 l
+465.489 293.364 l
+462.66 298.362 l
+460.397 302.605 l
+458.322 306.566 l
+457.474 310.998 l
+455.493 313.638 l
+453.419 316.09 l
+450.684 320.334 l
+448.327 325.049 l
+444.555 334.95 l
+444.491 338.074 l
+446.881 345.086 l
+447.519 348.433 l
+448.475 351.142 l
+447.519 352.417 l
+448.316 353.732 l
+448.706 357.228 l
+454.23 357.674 l
+462.321 365.541 l
+463.046 368.331 l
+464.553 370.787 l
+467.454 374.246 l
+467.789 376.422 l
+471.355 377.276 l
+473.93 379.115 l
+475.401 381.69 l
+478.343 385.98 l
+481.752 388.375 l
+486.556 390.516 l
+487.292 392.11 l
+484.472 394.194 l
+484.718 396.768 l
+483.124 397.626 l
+484.472 398.117 l
+488.395 398.117 l
+489.744 398.607 l
+490.97 401.549 l
+488.763 403.633 l
+486.434 404.614 l
+483.614 404.124 l
+481.898 405.104 l
+481.408 408.046 l
+483.982 406.33 l
+486.311 407.066 l
+487.415 408.414 l
+488.395 410.498 l
+487.537 414.053 l
+486.755 416.977 l
+481.569 415.845 l
+481.003 418.297 l
+481.946 420.466 l
+481.097 424.332 l
+480.343 427.256 l
+478.268 430.273 l
+481.248 431.122 l
+479.287 432.961 l
+478.797 435.412 l
+477.203 438.477 l
+476.222 442.032 l
+476.345 444.361 l
+478.429 445.342 l
+480.022 443.136 l
+481.371 435.78 l
+481.861 433.696 l
+483.455 433.083 l
+484.313 432.103 l
+484.558 429.651 l
+488.726 430.999 l
+489.462 430.141 l
+490.81 431.857 l
+490.81 433.819 l
+489.339 434.677 l
+490.688 435.535 l
+491.301 437.619 l
+491.301 438.845 l
+489.094 441.91 l
+487.01 444.729 l
+485.17 448.49 l
+489.632 445.143 l
+491.863 444.187 l
+494.094 448.968 l
+495.529 452.155 l
+496.166 455.821 l
+496.485 459.008 l
+495.21 461.877 l
+493.776 463.152 l
+494.513 468.331 l
+496.744 471.2 l
+499.354 471.12 l
+501.744 473.192 l
+504.294 474.945 l
+508.437 475.582 l
+511.306 476.538 l
+515.45 478.929 l
+515.29 481.16 l
+516.246 481.957 l
+518.637 482.116 l
+520.709 483.551 l
+522.94 482.276 l
+526.446 484.188 l
+526.605 487.853 l
+525.011 485.463 l
+522.78 485.463 l
+520.549 487.057 l
+517.84 489.925 l
+516.246 490.563 l
+517.681 494.706 l
+515.074 496.671 l
+515.818 499.688 l
+517.731 503.194 l
+519.006 508.453 l
+520.28 509.887 l
+521.874 509.728 l
+526.177 513.712 l
+527.611 517.856 l
+528.089 520.246 l
+532.711 518.971 l
+536.855 523.593 l
+541.954 526.78 l
+538.767 531.243 l
+535.898 532.039 l
+534.623 534.908 l
+532.074 535.545 l
+530.958 537.617 l
+526.496 551.96 l
+521.715 553.713 l
+518.527 550.366 l
+515.818 551.163 l
+514.065 552.916 l
+512.95 552.12 l
+510.4 545.904 l
+510.559 542.558 l
+510.718 532.199 l
+509.284 525.665 l
+506.097 523.752 l
+503.475 522.415 l
+502.903 519.872 l
+476.504 513.432 l
+472.52 511.201 l
+466.623 501.32 l
+468.536 499.886 l
+467.739 498.292 l
+469.333 495.423 l
+466.623 494.308 l
+464.233 490.802 l
+457.54 489.208 l
+453.077 490.005 l
+445.268 486.339 l
+447.659 481.558 l
+439.531 473.112 l
+436.31 471.237 l
+434.701 468.606 l
+431.881 468.851 l
+427.223 464.805 l
+424.649 462.721 l
+419.99 461.986 l
+419.01 461.005 l
+416.435 460.882 l
+413.37 461.373 l
+409.835 463.073 l
+411.721 466.94 l
+412.853 470.995 l
+413.136 472.786 l
+415.588 475.238 l
+416.059 479.199 l
+415.399 480.99 l
+413.89 484.951 l
+413.136 487.308 l
+411.694 489.6 l
+409.553 490.798 l
+407.572 490.232 l
+406.063 488.157 l
+404.46 485.611 l
+402.763 485.611 l
+402.48 487.026 l
+404.083 490.232 l
+405.12 491.175 l
+406.724 494.947 l
+406.063 497.87 l
+404.838 499.945 l
+404.932 502.113 l
+403.234 505.32 l
+400.028 505.98 l
+396.916 507.96 l
+392.322 508.538 l
+390.146 507.868 l
+390.704 504.129 l
+387.914 502.679 l
+387.635 500.279 l
+387.021 497.657 l
+385.849 500.056 l
+383.506 498.773 l
+381.72 495.927 l
+380.492 488.004 l
+379.934 485.381 l
+379.99 482.535 l
+381.385 479.522 l
+382.948 476.788 l
+383.243 471.749 l
+382.394 468.637 l
+381.546 464.299 l
+380.521 461.097 l
+376.966 459.136 l
+373.723 458.709 l
+369.58 467.793 l
+369.645 472.963 l
+368.92 477.243 l
+370.806 485.657 l
+371.603 493.999 l
+372.909 498.279 l
+369.282 494.579 l
+366.961 492.766 l
+369.718 499.512 l
+367.759 503.212 l
+365.873 507.491 l
+362.536 509.522 l
+353.977 510.538 l
+350.35 511.989 l
+348.609 512.569 l
+346.288 514.89 l
+346.07 515.398 l
+341.573 515.398 l
+341.5 518.662 l
+339.614 518.807 l
+336.132 516.196 l
+333.739 515.253 l
+332.07 515.398 l
+331.927 516.623 l
+333.153 518.339 l
+336.34 520.668 l
+338.179 521.894 l
+339.528 523.12 l
+341.121 524.469 l
+342.96 527.043 l
+344.186 528.024 l
+345.902 528.269 l
+347.373 529.25 l
+349.212 532.192 l
+343.328 532.927 l
+341.612 533.418 l
+339.528 533.173 l
+338.056 532.314 l
+336.463 532.437 l
+334.379 533.908 l
+333.03 534.889 l
+330.456 535.502 l
+328.617 537.095 l
+321.752 538.934 l
+320.771 538.812 l
+318.687 537.708 l
+317.461 538.444 l
+315.255 539.792 l
+311.7 539.547 l
+308.512 546.167 l
+307.164 547.27 l
+306.306 546.903 l
+306.306 543.225 l
+305.325 542.489 l
+289.737 542.606 l
+235.622 545.722 l
+208.558 549.494 l
+188.755 552.04 l
+177.722 554.114 l
+166.123 556 l
+155.561 558.358 l
+141.373 560.872 l
+134.128 562.656 l
+h
+</path>
+</page>
+</ipe>

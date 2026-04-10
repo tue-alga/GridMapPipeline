@@ -1,1 +1,0 @@
-Assigns a color to each site using the location of the site. Used for reproduction of the papers in the figures. Additionally can be used to define color gradients for new maps.
