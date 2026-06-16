@@ -70,7 +70,7 @@ public class MoveAndReshape {
                     relsymdiff = newrelsymdiff;
                     currentBadIterations = 0;
                     bestGrid = new MosaicCartogram(grid);
-                    // grid.export("Reshaping: new best grid " + it, 2);
+                    grid.export("Reshaping: new best grid " + it, 2);
                 } else {
                     currentBadIterations++;
                 }

@@ -154,7 +154,7 @@ public class DeformAlgorithm {
             System.out.println("  Finalizing");
             MosaicFinalizer finalizer = new MosaicFinalizer(dual, cartogram);
             finalizer.run();
-          // cartogram.export("final", 0);
+           cartogram.export("final", 0);
 
             for (Vertex v : dual.getVertices()) {
                 MosaicRegion region = cartogram.getRegion(v);
@@ -171,7 +171,7 @@ public class DeformAlgorithm {
         //System.out.println("Iteration " + it);
         //System.out.println("  Guides");
         cartogram.initializeGuidingShapes(factor);
-       // cartogram.export("Iteration "+it+": guides done", 0);
+        cartogram.export("Iteration "+it+": guides done", 0);
 
         //System.out.println("  Performing slide moves");
         slider.run(cartogram);
@@ -179,7 +179,7 @@ public class DeformAlgorithm {
 
         //System.out.println("  Move and reshaping");
         cartogram = heuristic.run(cartogram, final_round ? MosaicConstants.MAX_NO_IMPROVE_FINAL : MosaicConstants.MAX_NO_IMPROVE_SCALED); //no need for exact tiles yet
-      //  cartogram.export("Iteration "+it+": move and reshape done", 1);
+        cartogram.export("Iteration "+it+": move and reshape done", 1);
 
         //System.out.println("  Done");
         return cartogram;

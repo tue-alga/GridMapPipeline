@@ -18,6 +18,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import nl.tue.geometrycore.geometry.Vector;
+import nl.tue.geometrycore.geometry.linear.Polygon;
+import nl.tue.geometrycore.geometry.mix.GeometryGroup;
 import nl.tue.geometrycore.geometryrendering.styling.Dashing;
 import nl.tue.geometrycore.geometryrendering.styling.Hashures;
 import nl.tue.geometrycore.gui.debug.DebugPage;
@@ -612,22 +614,37 @@ public class MosaicCartogram {
         page.newView("regions", "guides");
         page.newView("guides");
 
+        page.setLayer("regions");
         for (MosaicRegion region : regions) {
             page.setStroke(Color.BLACK, 0.04, Dashing.SOLID);
             page.setFill(region.vertex.getPartition().color, Hashures.SOLID);
 
-            page.setLayer("regions");
             page.pushGroup();
             for (Coordinate c : region.allocated) {
                 page.draw(c.getBoundary());
             }
             page.popGroup();
+        }
 
-            page.setLayer("guides");
+        page.setLayer("guides");
+        for (MosaicRegion region : regions) {
+
+            GeometryGroup<Polygon> guide = region.guide.constructBoundaries();
+
             page.pushGroup();
-            for (Coordinate c : region.guide) {
-                page.draw(c.getBoundary());
-            }
+
+            page.setAlpha(0.5);
+            page.setStroke(null, 0.04, Dashing.SOLID);
+            page.setFill(region.vertex.getPartition().color, Hashures.SOLID);
+
+            page.draw(guide);
+
+            page.setAlpha(1.0);
+            page.setStroke(Color.BLACK, 0.2, Dashing.SOLID);
+            page.setFill(null, Hashures.SOLID);
+
+            page.draw(guide);
+
             page.popGroup();
         }
 

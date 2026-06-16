@@ -11,6 +11,13 @@ import java.util.Stack;
 import java.util.function.Function;
 import nl.tue.geometrycore.datastructures.priorityqueue.BasicIndexable;
 import nl.tue.geometrycore.geometry.Vector;
+import nl.tue.geometrycore.geometry.linear.LineSegment;
+import nl.tue.geometrycore.geometry.linear.Polygon;
+import nl.tue.geometrycore.geometry.mix.GeometryGroup;
+import nl.tue.geometrycore.graphs.ChainDecomposition;
+import nl.tue.geometrycore.graphs.simple.SimpleEdge;
+import nl.tue.geometrycore.graphs.simple.SimpleGraph;
+import nl.tue.geometrycore.graphs.simple.SimpleVertex;
 import nl.tue.geometrycore.util.ListUtil;
 
 /**
@@ -1155,6 +1162,82 @@ public class CoordinateSet implements Iterable<Coordinate> {
         }
 
         return boundary;
+    }
+    
+    public GeometryGroup<Polygon> constructBoundaries() {
+        
+        SGraph graph = new SGraph();
+        
+        for (Occupied occ : this.occupied) {
+            Polygon P = occ.local.getBoundary();
+            SVertex prev = graph.findOrAdd(P.vertex(-1));
+            for (Vector v : P.vertices()) {
+                SVertex next = graph.findOrAdd(v);
+                
+                SEdge edge = prev.getEdgeTo(next);
+                if (edge == null) {
+                    graph.addEdge(prev, next, new LineSegment(prev.clone(), next.clone()));
+                } else {
+                    graph.removeEdge(edge);
+                }
+                
+                prev = next;
+            }
+        }
+        
+        GeometryGroup<Polygon> rings = new GeometryGroup<Polygon>();
+        
+        ChainDecomposition<LineSegment,?,?> decomp = new ChainDecomposition<>(graph);
+        
+        for (ChainDecomposition<LineSegment,?,?>.Chain chain : decomp.getChains()) {
+            if (!chain.isClosed()) {
+                System.err.println("Open chain along boundary of a set?");
+            } else {
+                rings.add(chain.toPolygon());
+            }
+        }
+        
+        origin.toVector();
+        rings.translate(origin.toVector());
+        
+        return rings;
+    }
+    
+    private static class SGraph extends SimpleGraph<LineSegment,SVertex,SEdge> {
+        
+        SGraph() {
+            super(false);
+        }
+        
+        SVertex findOrAdd(Vector loc) {    
+            SVertex v = findVertex(loc);
+            
+            if (v == null) {
+                return addVertex(loc);
+            } else {
+                return v;
+            }
+        }
+
+        @Override
+        public SEdge createEdge() {
+            return new SEdge();
+        }
+
+        @Override
+        public SVertex createVertex() {
+            return new SVertex();
+        }
+        
+        
+    }
+    
+    private static class SVertex extends SimpleVertex<LineSegment,SVertex,SEdge> {
+        
+    }
+    
+    private static class SEdge extends SimpleEdge<LineSegment,SVertex,SEdge> {
+        
     }
 
     private enum State {

@@ -25,7 +25,11 @@ import common.util.Transform;
 import common.gridmath.GridGeometry;
 import common.gridmath.GridGeometrySpawner;
 import common.util.Stopwatch;
+import io.GeoJSON;
 import io.IO;
+import io.SVG;
+import io.TSVGrid;
+import io.WKT;
 import java.awt.Color;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -65,6 +69,11 @@ public class GUI {
     private boolean drawLabels = false;
     private int guideAlpha = 0;
     private List<QualityMap> qualityMaps = new ArrayList();
+
+    private boolean export_wkt = true;
+    private boolean export_svg = true;
+    private boolean export_geojson = true;
+    private boolean export_tsv = true;
 
     private final double margin = 1.05; // 5% margin
 
@@ -248,6 +257,31 @@ public class GUI {
 
     public void saveAll(File f) {
         IO.write(f, map);
+    }
+
+    public void export() {
+        int result = choose.showSaveDialog(draw);
+        if (result == JFileChooser.APPROVE_OPTION) {
+            export(choose.getSelectedFile());
+        }
+    }
+
+    public void export(File f) {
+        if (export_wkt) {
+            WKT.write(IO.ensureExtension(f, ".wkt"), map);
+        }
+
+        if (export_svg) {
+            SVG.write(IO.ensureExtension(f, ".svg"), map);
+        }
+
+        if (export_geojson) {
+            GeoJSON.write(IO.ensureExtension(f, ".geojson"), map);
+        }
+
+        if (export_tsv) {
+            TSVGrid.write(IO.ensureExtension(f, ".tsv"), map);
+        }
     }
 
     private class DrawPanel extends GeometryPanel {
@@ -501,6 +535,18 @@ public class GUI {
             });
 
             tab.addButton("Save all", (e) -> saveAll());
+
+            tab.addSeparator(2);
+
+            tab.addCheckbox("WKT", export_wkt, (e, v) -> export_wkt = v);
+            tab.addCheckbox("SVG", export_svg, (e, v) -> export_svg = v);
+            tab.addCheckbox("GeoJSON", export_geojson, (e, v) -> export_geojson = v);
+            tab.addCheckbox("TSV", export_tsv, (e, v) -> export_tsv = v);
+
+            tab.addStaticText("Exports to all the above selected formats. Note that the filename will be the same, with appropriate extensions.", 4)
+                    .setBorder(null);
+            
+            tab.addButton("Export result", (e) -> export());
         }
 
         private void partition() {
