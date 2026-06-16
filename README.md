@@ -1,23 +1,28 @@
 # Gridmap
-Contains the code and data for generating and evaluating gridmaps for complex data.
 
-*/GridMapPipeline/* contains the newly proposed restructured pipeline (Meulemans, Computer Graphics Forum 2026, forthcoming). 
-- It uses the */CmdMedialAxis/* program, for which a precompiled Windows version is available at */precompiled/CmdMedialAxis.exe*.
-- For exploratory purposes, the *main.GUI* class is best used.
-- Computing mosaic cartograms can be done via the *main.Cartogram* class. 
-- A command-line version of the pipeline is also available through *main.Pipeline*, though not fully fledged for all settings. 
-- The *evaluation* package describes all scripts that were used to generate the figures and tables in the paper. Specifically, running *evalution.Main* first computes all grid maps and cartograms (placed into /output/) and then computes figures and logs for all results (placed into /evaluation/).
+This repository contains code and example data for generating and evaluating gridmaps for complex geographic areas, based on 
 
-*/GridMapCombiner/* contains a unified version of the Java code of the original pipeline by Meulemans, Sondag and Speckmann (https://doi.org/10.1109/TVCG.2020.3028953), including minor bug fixes.
-- It uses the */MedialAxis/* program, for which a precompiled Windows version is available at */precompiled/sdg-voronoi-edges.exe*.
-- This version also contains an *integration* package that aligns it with the setup for the new pipeline. Specifically, running *integration.Main* runs all scripts used in the evaluation of the new pipeline.
+A Simple Grid-Maps Pipeline: Restructured, Accelerated and Upgraded (W. Meulemans, Computer Graphics Forum, 2026). <https://doi.org/10.1111/cgf.70467>
 
-To run all experiments that are reported, precompiled versions (for Windows) are available in */precompiled/* and two batch scripts that run all scripts (*run-scripts.bat*, i.e., run all algorithms) and produce all outcomes (*run-outcomes.bat*, i.e., produce all tables and figures).
-Note that these assume that IPE (https://ipe.otfried.org/) is installed at *C:/Program Files/ipe-7.2.24/bin/*. For another path to IPE, the code must be reconfigured and recompiled.
+Notes:
+1. For the evaluation code as used in the paper, see version 2.0.0 at <https://doi.org/10.5281/zenodo.19497047>. Note that this also contains a precompiled version of CmdMedialAxis for Windows, which is compatible with the current version of the program.
+2. For converting IPE files to PDF files, IPE (https://ipe.otfried.org/) is assumed to be installed at *C:/Program Files/ipe-7.2.24/bin/*. For another path to IPE, the code must be adapted and recompiled. However, for most standard use-cases, this conversion is likely not required.
+3. GeometryCore, available at https://github.com/tue-alga/GeometryCore, is required. For SVG export to work correctly, you will need the head version of 16/06/2026 or later.
 
-Both versions use GeometryCore, available at https://github.com/tue-alga/GeometryCore, and require version 1.4.0 (or later).
+## Basic use of the program
 
-## Input format
+Basic use of the program follows the workflow below to generate a grid map:
+
+1. In the "General" tab: click "Load all" to load a ".wkt" file describing the input.
+2. In the "Partition" tab: configure productivity and dilation as desired, then click "Execute".
+3. In the "Deform" tab: configure the desired grid, by selecting a grid type from the dropdown menu; optionally, configure an affine transformation of the grid though shear, scale and rotate. Then click "Execute".
+4. In the "Assign" tab: click "Execute".
+5. In the "Combine" tab: optionally select a combination method, then click "Execute".
+6. Return to the "General" tab: select the desired output formats, then click "Export result". 
+
+Note that, saving a WKT file (either through "Save all" or "Export results"), stores the full result and can be used to load the exact state into the program at a later point in time.
+
+## Input format (WKT)
 
 The program uses a custom WKT ("well-known-text") format to read input and write (intermediate) outputs. Here is a brief sketch of this format; see example data files and/or io.WKT.java for details.
 
